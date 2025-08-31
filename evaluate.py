@@ -28,9 +28,9 @@ from typing import Dict, Tuple
 
 import tensorflow as tf
 from tensorflow.keras import optimizers
+
 from data_loader import DataLoader
 from cnn_model import CNNModel
-
 
 def parse_args() -> argparse.Namespace:
     """
