@@ -1,0 +1,32 @@
+
+# Requirements for running the Caltech‑101 CNN code on Google Colab
+#
+# This file enumerates only the packages required for the provided
+# `cnn_model.py`, `data_loader.py`, `train.py`, and `evaluate.py` scripts.
+# It deliberately omits packages that are part of Python’s standard library
+# (such as `pathlib`) and avoids installing auxiliary packages like
+# `tensorflow-datasets` or the standalone `tensorflow.keras` module because
+# they are not used in the refactored code and may conflict with the
+# TensorFlow version shipped with Colab.
+
+# Pin TensorFlow to a known‑working version.  Version 2.19.0 is the default
+# in current Colab environments and supports Python 3.11–3.12.  A fixed
+# version helps avoid ABI and symbol mismatches that can occur if multiple
+# TensorFlow‑related packages are upgraded independently.
+tensorflow==2.19.0
+
+# Numerical library used throughout the project.  TensorFlow depends on
+# NumPy, but we list it explicitly for clarity.  Any version compatible with
+# TensorFlow 2.19 (NumPy <2.2) will suffice.
+numpy>=1.26,<2.2
+
+# Scikit‑learn is used for computing the F1 score and confusion matrix.
+scikit-learn>=1.2
+
+# Matplotlib generates the confusion matrix image.
+matplotlib>=3.5
+
+# Tqdm provides a progress bar for iterating over batches.  If you do not
+# need progress bars (or are using the refactored code without `tqdm`), you
+# can safely omit this dependency.
+tqdm>=4.64
