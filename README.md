@@ -6,6 +6,11 @@
 
 Caltech-101은 총 101개의 class와 하나의 background 클래스 (Background_Google)을 포함하며, 각 클래스는 40~800개 사이 이미지로 구성되어있다. 모든 이미지는 크기와 배경이 다양하며 컬러 RGB 이미지로 되어있다.
 
+## 의의
+
+python과 tensorflow를 사용하여, 다양한 사물 이미지를 분류하는 CNN 모델을 구현하고 그 성능을 평가했다. 
+모델의 성능을 끌어올리기 위해 data augumentation, Global average pooling, Dropout 등 다양한 방법의 적용을 시도했다.
+
 # How to Run
 
 <img width="290" height="381" alt="image" src="https://github.com/user-attachments/assets/392a043e-0bba-488d-b7bd-a1f85bfdd739" />
