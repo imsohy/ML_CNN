@@ -9,3 +9,5 @@ https://www.kaggle.com/datasets/imbikramsaha/caltech-101?resource=download
 
 
 <img width="1000" height="800" alt="confusion_matrix" src="https://github.com/user-attachments/assets/d9dc0aa4-b56b-4d78-a5d1-3ab54d4b518b" />
+
+F1 Score: 0.1382
